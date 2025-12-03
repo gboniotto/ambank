@@ -1,0 +1,137 @@
+:root {
+    --cor-degrade-inicio: #7A64DD;
+    --cor-degrade-fim: #4628CC;
+    --cor-fundo: #ffffff;
+    --cor-card-info: #E3E3FF;
+    --cor-botao: #7800BE;
+    --texto: #111;
+    --max-width: 980px;
+    --gutter: 20px;
+    --header-height: 150px;
+    --cor-titulo: #ffffff;
+    --cor-subtitulo: #21005D;
+    
+    --card-radius: 18px;
+    --fonte: 'Poppins', Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: var(--fonte);
+    background: var(--cor-fundo);
+    color: var(--texto);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    background: linear-gradient(to bottom, var(--cor-degrade-inicio), var(--cor-degrade-fim));
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 120px var(--gutter);
+    text-align: center;
+    color:var(--cor-titulo);
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.icone-perfil {
+    text-align: center;
+    width: 55px
+}
+
+.main {
+    width: 100%;
+    max-width: var(--max-width);
+    padding: 0 var(--gutter);
+    flex: 1;
+}
+
+.card {
+    background: var(--cor-fundo);
+    border-radius: var(--card-radius);
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: -100px;
+    margin-bottom: 4rem;
+}
+
+.info-section {
+    padding: 20px;
+    border-radius: 10px;
+    background: var(--cor-card-info);
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    color: var(--cor-subtitulo);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.user-name {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--texto);
+}
+
+.data-info {
+    margin: 15px 0;
+}
+
+.data-info h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--texto);
+    margin-bottom: 5px;
+}
+
+.data-info p {
+    font-size: 16px;
+    color: var(--texto);
+}
+
+
+.voltar-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn-voltar {
+    width: 100%;
+    background: var(--cor-botao);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-voltar:hover {
+    background: #b75df0;
+}

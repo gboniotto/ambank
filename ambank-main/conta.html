@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMBank - Minha Conta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/conta.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="img/icone-perfil.png" class="icone-perfil">
+            <h1>MINHA CONTA</h1>
+        </header>
+        
+        <main class="main">
+            <div class="card">
+
+                <!-- secao 1 -->
+                <div class="info-section">
+                    <div class="section-header">
+                        <h2>Dados do Cliente</h2>
+                    </div>
+
+                    <div class="data-info">
+                        <h3>NOME</h3>
+                        <p id="userName">...</p>
+                    </div>
+
+                    <div class="data-info">
+                        <h3>CPF</h3>
+                        <p id="userCpf">...</p>
+                    </div>
+
+                    <div class="data-info">
+                        <h3>EMAIL</h3>
+                        <p id="userEmail">...</p>
+                    </div>
+
+                    <div class="data-info">
+                        <h3>DATA DE CADASTRO</h3>
+                        <p id="userCadastro"></p>
+                    </div>
+                </div>
+
+                <!-- secao 2 -->
+                <div class="info-section">
+                    <div class="section-header">
+                        <h2>Informações da Conta</h2>
+                    </div>
+
+                    <div class="data-info">
+                        <h3>NÚMERO DA CONTA</h3>
+                        <p id="numeroConta">...</p>
+                    </div>
+
+                    <div class="data-info">
+                        <h3>AGÊNCIA</h3>
+                        <p id="agenciaConta">...</p>
+                    </div>
+
+                    <div class="data-info">
+                        <h3>SALDO</h3>
+                        <p id="saldoConta">R$ --,--</p>
+                    </div>
+
+                    <div class="data-info">
+                        <h3>CHAVE PIX</h3>
+                        <p id="chavePix">...</p>
+                    </div>
+                </div>
+
+                <!-- voltar -->
+                <div class="voltar-container">
+                    <button class="btn-voltar" onclick="voltarHome()">Voltar para Home</button>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="/js/conta.js"></script>
+</body>
+</html>

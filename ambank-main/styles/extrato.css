@@ -1,0 +1,121 @@
+:root {
+    --cor-fundo: #ffffff;
+    --cor-texto: #ffffff;
+    --cor-botato: #21005D;
+    --cor-botao-hover: #36097e;
+    --cor-texto-sucesso:#28a745;
+    font-size: 24px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+        height: 100vh;
+        margin: 0;
+        background: linear-gradient(
+            to bottom left,
+            #7A64DD 24%,
+            #4628CC 76%
+        );
+
+        display: flex;
+        justify-content:space-between;
+        flex-direction: column;
+        align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 2rem 1rem 2.5rem 1rem;
+}
+
+h2 {
+    text-align: center;
+    color: var(--cor-texto);
+    font-size: 1.6rem;
+}
+
+.lista {
+    margin-top: 20px;
+}
+
+.item {
+    background: var(--cor-fundo);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-info {
+    flex-grow: 1;
+}
+
+
+.recebido {
+    color: var(--cor-texto-sucesso);
+}
+
+.seta {
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+.botao {
+    width: 100%;
+    padding: 12px;
+    margin: 25px 0;
+    background: var(--cor-botato);
+    color: var(--cor-texto);
+    border: none;
+    border-radius: 8px;
+    margin-top: 25px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    
+}
+
+.botao:hover {
+    background: var(--cor-botao-hover);
+}
+
+@media (min-width: 1024px) {
+    .container {    
+        max-width: 500px;
+        margin: 0px;
+        padding: 80px;
+    }
+}
+
+
+.filtros {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-top: 15px;
+}
+
+.filtros button {
+    background: var(--cor-fundo);
+    border: none;
+    border-radius: 25px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.filtros button.ativo {
+    background: var(--cor-botato);
+    color: var(--cor-texto);
+}

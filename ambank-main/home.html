@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AMBank - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/home.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo-area">
+        <img src="/img/logo-texto.png" alt="" class="icone-logo">
+      </div>
+      <div class="saldo">
+        <p>Saldo disponível</p>
+        <div class="valor-area">
+          <span class="valor" id="valorSaldo">R$ --,--</span>
+        </div>
+      </div>
+    </header>
+    
+    <main class="main">
+      <div class="atalhos">
+        <div class="item" onclick="irParaConta()">
+          <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="Conta">
+          <p>Conta</p>
+        </div>
+        <div class="item" onclick="irParaPix()">
+          <img src="https://cdn-icons-png.flaticon.com/512/724/724954.png" alt="Pix">
+          <p>Pix</p>
+        </div>
+        <div class="item" onclick="irParaExtrato()">
+          <img src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png">
+          <p>Extrato</p>
+        </div>
+      </div>
+      <div class="cartao-container">
+        <div class="cartao-content">
+          <div class="cartao-top">
+            <img src="img/visa-logo.png">
+          </div>
+          <div class="cartao-bottom">
+            <p class="cartao-name" id="nomeCliente">Aluno</p>
+            <p class="cartao-numero">•••• •••• •••• <span class="last" id="contaNumero">XXXX</span></p>
+            <img src="img/logo-cartao.png" class="logo-cartao">
+
+          </div>
+        </div>
+      </div>
+      <div class="botao-container">
+        <button onclick="logout()" class="botao">Sair</button>
+      </div>
+    </main>
+  </div>
+  <script src="/js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+/* PIX CSS */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor-texto: #21005D;
+    --cor-botao-voltar: #ffffff;
+    --cor-botao: #7800BE;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    background: linear-gradient(
+    to bottom left,
+    #80C7F4 3%,  
+    #7A64DD 34%,
+    #4628CC 76% 
+  );
+
+}
+
+.etapa {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    
+    width: 380px;    
+    max-width: 70%;    
+
+    margin: 0 auto;   
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--cor-texto);
+}
+
+.campo {
+    margin-bottom: 2rem;
+}
+
+label {
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+    color: var(--cor-texto);
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.botao {
+    width: 100%;
+    padding: 12px;
+    background: var(--cor-botao);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.botao-voltar {
+    width: 100%;
+    padding: 12px;
+    background: #777;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.info {
+    background: #f0f0f0;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.erro {
+    color: rgb(164, 4, 4);
+    font-weight: 510;
+    text-align: center;
+}
+
+
+.btn-voltar-home {
+    background: none;
+    border: none;
+    color: var(--cor-botao);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-align: left;
+    padding: 0;
+}
+
+.btn-voltar-home:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMBank - Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/styles/login.css">
+    
+</head>
+
+<body>
+    <div class="container">
+
+        <header class="header">
+            <a href="index.html">
+            <img src="/img/logo-login.png" class="logo-login">
+            </a>
+        </header>
+
+        <main class="main">
+            <p class="texto">Olá Aluno, faça login:</p>
+            
+            <form id="loginForm">
+                <input type="text" id="login" placeholder="Seu login" required>
+                <input type="password" id="senha" placeholder="Sua senha" required>
+                <button class="botao" type="submit">ENTRAR</button>
+            </form>
+            
+            <p id="erroLogin" class="erro-login"></p>
+            
+            <a href="cadastro.html" class="link-cadastro">Criar nova conta</a>
+        </main>
+
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>

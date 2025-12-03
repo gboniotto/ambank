@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AMBank - Painel Admin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/admin.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo-area">
+        <img src="/img/anhembimorumbank (1).png" alt="" class="icone-logo">
+        <p class="slogan">Painel Administrativo</p>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="atalhos">
+        <div class="item" onclick="carregarClientes()">
+          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Clientes">
+          <p>Clientes</p>
+        </div>
+        <div class="item" onclick="carregarTransacoesPendentes()">
+          <img src="https://cdn-icons-png.flaticon.com/512/1161/1161388.png" alt="Pendentes">
+          <p>Pendentes</p>
+        </div>
+        <div class="item" onclick="carregarTodasTransacoes()">
+          <img src="https://cdn-icons-png.flaticon.com/512/1584/1584900.png" alt="Transações">
+          <p>Todas</p>
+        </div>
+      </div>
+
+      <section id="conteudo" class="conteudo">
+        <p>Selecione uma opção acima.</p>
+      </section>
+
+      <div class="botao-container">
+        <button onclick="logout()" class="botao">Sair</button>
+      </div>
+    </main>
+  </div>
+  <script src="/js/admin.js"></script>
+</body>
+</html>

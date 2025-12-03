@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/styles/cadastro.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+        <div class="acesso-header">
+            <div>
+                <a href="login.html">
+                    <span class="material-symbols-outlined icone-header">arrow_back_ios</span>
+                </a>
+            </div>
+
+            <div class="texto-header">
+                Novo Cliente
+            </div>
+        </div>
+        <div class="logo-header">
+            <img src="/img/icon.png" alt="" class="logo">
+        </div>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <form id="cadastroForm" class="form">
+
+            <h2 class="titulo">Cadastro de Cliente</h2>
+
+            <div class="caixa-texto">
+                <label for="nome">Nome completo</label>
+                <input id="nome" name="nome" type="text" required>
+            </div>
+
+            <div class="caixa-texto">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required>
+            </div>
+
+            <div class="caixa-texto">
+                <label for="senha">Senha</label>
+                <input id="senha" name="senha" type="password" required>
+            </div>
+
+            <div class="caixa-texto">
+                <label for="pin">PIN de Transações (4 dígitos)</label>
+                <input id="pin" name="pin" type="password" maxlength="4" required>
+            </div>
+
+            <div class="caixa-texto">
+                <label for="telefone">Telefone</label>
+                <input id="telefone" name="telefone" type="text" placeholder="(11) 99999-9999" required>
+            </div>
+
+            <div class="caixa-texto">
+                <label for="cpf">CPF</label>
+                <input id="cpf" name="cpf" type="text" maxlength="11" required>
+            </div>
+
+            <div class="caixa-texto">
+                <label for="tipoCliente">Tipo de Cliente</label>
+                <select id="tipoCliente" name="tipoCliente" required>
+                    <option value="">Selecione</option>
+                    <option value="PESSOA_FISICA">Pessoa Física</option>
+                    <option value="PESSOA_JURIDICA">Pessoa Jurídica</option>
+                </select>
+            </div>
+
+            <h3 class="subtitulo">Endereço</h3>
+
+            <div class="caixa-texto">
+                <label for="logradouro">Logradouro</label>
+                <input id="logradouro" name="logradouro" type="text" required>
+            </div>
+
+            <div class="caixa-texto">
+                <label for="bairro">Bairro</label>
+                <input id="bairro" name="bairro" type="text" required>
+            </div>
+
+            <div class="caixa-texto">
+                <label for="cep">CEP</label>
+                <input id="cep" name="cep" type="text" maxlength="9" required>
+            </div>
+
+            <div class="caixa-texto-duo">
+                <div class="caixa-texto">
+                    <label for="numero">Número</label>
+                    <input id="numero" name="numero" type="text" required>
+                </div>
+
+                <div class="caixa-texto">
+                    <label for="complemento">Complemento</label>
+                    <input id="complemento" name="complemento" type="text">
+                </div>
+            </div>
+
+            <div class="caixa-texto-duo">
+                <div class="caixa-texto">
+                    <label for="cidade">Cidade</label>
+                    <input id="cidade" name="cidade" type="text" required>
+                </div>
+
+                <div class="caixa-texto">
+                    <label for="uf">UF</label>
+                    <input id="uf" name="uf" type="text" maxlength="2" required>
+                </div>
+            </div>
+
+            <p id="erro" class="erro"></p>
+            <p id="sucesso" class="sucesso"></p>
+
+            <button type="submit" class="botao">Cadastrar</button>
+
+        </form>
+    </main>
+
+    <script src="/js/cadastro.js"></script>
+    
+</body>
+</html>

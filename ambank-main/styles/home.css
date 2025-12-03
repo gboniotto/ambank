@@ -1,0 +1,274 @@
+:root{
+  --bg:#ffffff;
+  --text:#111;
+  --muted:#ffffff;
+  --max-width:980px;
+  --gutter:20px;
+  --header-height:150px;
+  --card-radius:18px;
+  --roxo-principal:#6B53D8;
+  --font:'Poppins', Arial, sans-serif;
+}
+
+/* reset */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family:var(--font);
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.container{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  width:100%;
+  padding-left:env(safe-area-inset-left);
+  padding-right:env(safe-area-inset-right);
+}
+
+.header{
+  width:100%;
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius:10px;
+  background: linear-gradient(
+    to bottom left,
+    #7A64DD 24%,
+    #4628CC 76% 
+  );
+
+  padding:20px var(--gutter);
+  box-shadow:0 6px 18px rgba(120,40,160,0.08);
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height:var(--header-height);
+  position:relative;
+}
+
+.header .logo-area{
+  max-width:var(--max-width);
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  position:relative; 
+}
+
+.icone-logo {
+  width: 150px;
+  margin-bottom: 2rem;
+}
+
+.brand{
+  font-size:34px;
+  font-weight:700;
+  margin:6px 0 6px 0;
+}
+
+.saldo {
+  width:100%;
+  margin-top: 0.2rem; 
+}
+
+.saldo p {
+  color:var(--muted);
+  text-align: left;
+  font-size: 14px;
+}
+
+.valor-area {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.valor{
+  font-size: 10px;
+  color:var(--muted);
+  font-weight:700;
+}
+
+.main{
+  width:100%;
+  max-width:var(--max-width);
+  padding:24px var(--gutter) 40px;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+  flex:1;
+}
+
+.atalhos {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  width:100%;
+  padding:6px 0 6px 0;
+}
+
+.item { 
+  display:flex; 
+  flex-direction:column; 
+  align-items:center; 
+  gap:8px; 
+  width:23%; 
+  min-width:64px; 
+
+  transition: transform 0.2s ease-in-out;
+}
+
+.item:hover {
+  transform: scale(1.08);
+  cursor: pointer;
+}
+
+.item img{
+  width:56px;
+  height:56px;
+  padding:12px;
+  background:#f2f2f2;
+  border-radius:50%;
+  box-shadow:0 4px 12px rgba(0,0,0,0.06);
+  object-fit:contain;
+}
+
+.item p {
+  font-weight:700;
+  font-size:14px; }
+
+
+.cartao-container{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  margin-top: auto;
+  padding-bottom: -30px;
+}
+
+.cartao-content{
+  width:100%;
+  max-width:520px;
+  background: linear-gradient(
+    to bottom left,
+    #7A64DD 15%,
+    #4628CC 76% 
+  );
+  border-radius:16px;
+  padding:40px 22px;
+  color:#fff;
+  box-shadow:0 18px 40px rgba(120,40,160,0.12);
+  position:relative;
+}
+
+.cartao-top { 
+  display:flex;
+  justify-content:space-between;
+  align-items:center; 
+}
+
+.cartao-top img { 
+  margin:0;
+  width: 50px;
+}
+
+.cartao-bottom {
+  margin-top:18px;
+  position:relative;
+}
+
+.cartao-bottom p{
+  position: relative;
+  z-index: 1;
+}
+
+.logo-cartao {
+  position: absolute;
+  right: -25px;
+  bottom: -35px;
+  width: 270px;
+  height: auto;
+  pointer-events: none; 
+  z-index: 0;
+}
+
+.cartao-name {
+  margin:0 0 10px 0;
+  font-size:15px;
+  opacity:0.95;
+
+}
+.cartao-numero {
+  margin:0;
+  font-size:12px;
+  letter-spacing:6px;
+  opacity:0.95;
+}
+
+.cartao-number .last {
+  letter-spacing:0;
+  margin-left:8px;
+  font-weight:700;
+}
+
+.botao-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.botao {
+  background: var(--roxo-principal);
+  color: #fff;
+  font-family: var(--font);
+  font-size: 16px;
+  font-weight: 500;
+
+  border: none;
+  padding: 14px 20px;
+  width: 50%;
+  border-radius: 10px;
+  margin-top: 30px;
+
+  
+  cursor: pointer;
+  transition: filter 0.2s ease-in-out, transform 0.1s ease;
+  box-shadow: 0 6px 18px rgba(120, 40, 160, 0.08);
+}
+
+.botao:hover {
+  filter: brightness(1.15); 
+}
+
+.botao:active {
+  transform: scale(0.98);
+  filter: brightness(1);
+}
+
+@media (max-width:480px){
+  .atalhos{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+  }
+  .item img{ width:56px; height:56px; padding:12px; }
+  .brand{font-size:28px}
+  .valor{font-size:18px}
+}
+
+@media (min-height:900px){
+  .main{ padding-top:32px }
+}
+
+@media (min-width:1100px){
+  .container{ justify-content:flex-start }
+  .main{ padding-left:40px; padding-right:40px }
+  .card{ max-width:640px }
+}
